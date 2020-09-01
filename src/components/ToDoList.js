@@ -1,7 +1,7 @@
 import React, { useReducer, useState } from "react";
 import Todo from "./Todo";
 
-const ACTIONS = {
+export const ACTIONS = {
   ADD_TODO: "Add",
   DELETE_TODO: "Del",
   TOGGLE_TODO: "Toggle"
@@ -18,6 +18,8 @@ const reducer = (todos, action) => {
         }
         return todo;
       });
+    case ACTIONS.DELETE_TODO:
+      return todos.filter((todo) => todo.id !== action.payload.id);
     default:
       return todos;
   }
