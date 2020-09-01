@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  overflow: hidden;
+}
+body {
+  background-color: lightslategray;
+}
+header {
+  position: fixed;
+  width: 100vw;
+  height: 70px;
+  /* border-bottom: 1px solid lightgrey; */
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: lightslategray;
+  color: white;
+  text-align: center;
+}
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 40vw;
+  height: 80vh;
+  margin: auto;
+  margin-top: 100px;
+  box-shadow: 1px -2px 3px 1px lightslategray;
+  background: whitesmoke;
+}
+.todo-list h1 {
+  /* margin-top: 30px; */
+  color: white;
+  background-color: lightslategrey;
+  height: 60px;
+  text-align: center;
+  padding-top: 15px;
+}
+.todo-list input {
+  margin-top: 20px;
+  width: 38vw;
+  height: 40px;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 5px;
+  border: 1px solid lightslategray;
+}
+
+.todo {
+  /* border: 1px red solid; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-left: 18px;
+  width: 38vw;
+  height: auto;
+}
+.todo-user-text {
+  /* border: 1px solid black; */
+  margin: 7px;
+  text-align: center;
+  width: max-content;
+}
+
+.todo span {
+  font-size: medium;
+  font-weight: bold;
+  color: whitesmoke;
+}
+
+.todo-btn {
+  /* border: 1px solid yellow; */
+  flex-wrap: wrap;
+}
+.todo button {
+  height: 30px;
+  width: 60px;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: bold;
+  margin: 2px;
+  background-color: whitesmoke;
+}
+.todo-btn-del {
+  border: 1px solid red;
+  color: red;
+}
+.todo-btn-toggle {
+  border: 1px solid green;
+  color: green;
+}
+.todo-btn-del:hover {
+  background-color: rgb(190, 10, 10);
+  color: white;
+}
+.todo-btn-toggle:hover {
+  background-color: green;
+  color: white;
+}
